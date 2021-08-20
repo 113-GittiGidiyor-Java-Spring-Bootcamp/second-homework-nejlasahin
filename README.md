@@ -1,18 +1,19 @@
+#Course Request
+
 ![image](./src/main/resources/images/Course.PNG)
 
---
+#Permanent Instructor Request
 
 ![image](./src/main/resources/images/PermanentInstructor.PNG)
 
---
+#Student Request
 
 ![image](./src/main/resources/images/Student.PNG)
 
---
+#Visiting Researcher Request
 
 ![image](./src/main/resources/images/Visitingresearcher.PNG)
 
---
 
 # İkinci ödev teslim tarihi : 22 Ağustos - 23:00
 ### Not : ARAŞTIRMA KONUSU kısmı tamamıyla sizleri geliştirmek amaçlı , eklenmiştir , o madde için herhangi bir kod vs örneğine ihtiyaç yoktur.
