@@ -1,16 +1,16 @@
-![image](./src/main/resources/image/Course.PNG)
+![image](./src/main/resources/images/Course.PNG)
 
 --
 
-![image](./src/main/resources/image/PermanentInstructor.PNG)
+![image](./src/main/resources/images/PermanentInstructor.PNG)
 
 --
 
-![image](./src/main/resources/image/Student.PNG)
+![image](./src/main/resources/images/Student.PNG)
 
 --
 
-![image](./src/main/resources/image/VisitingResearcher.PNG)
+![image](./src/main/resources/images/VisitingResearcher.PNG)
 
 --
 
