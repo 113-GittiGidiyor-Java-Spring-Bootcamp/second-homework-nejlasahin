@@ -10,7 +10,7 @@
 
 --
 
-![image](./src/main/resources/images/VisitingResearcher.PNG)
+![image](./src/main/resources/images/Visitingresearcher.PNG)
 
 --
 
