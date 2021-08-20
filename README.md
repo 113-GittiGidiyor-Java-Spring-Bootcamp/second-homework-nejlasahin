@@ -1,16 +1,16 @@
-#Course Request
+# Course Request
 
 ![image](./src/main/resources/images/Course.PNG)
 
-#Permanent Instructor Request
+# Permanent Instructor Request
 
 ![image](./src/main/resources/images/PermanentInstructor.PNG)
 
-#Student Request
+# Student Request
 
 ![image](./src/main/resources/images/Student.PNG)
 
-#Visiting Researcher Request
+# Visiting Researcher Request
 
 ![image](./src/main/resources/images/Visitingresearcher.PNG)
 
