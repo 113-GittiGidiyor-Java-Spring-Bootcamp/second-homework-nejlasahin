@@ -34,11 +34,7 @@ public class CourseDAOJPAImpl implements CourseDAO<Course> {
     }
 
     @Override
-    public void update(Course newCourse) {
-        Course course = entityManager.find(Course.class, newCourse.getId());
-        course.setCourseName(newCourse.getCourseName());
-        course.setCourseCode(newCourse.getCourseCode());
-        course.setCreditScore(newCourse.getCreditScore());
+    public void update(Course course) {
         entityManager.merge(course);
     }
 
