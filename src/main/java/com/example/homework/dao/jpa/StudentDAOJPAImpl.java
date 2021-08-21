@@ -33,12 +33,7 @@ public class StudentDAOJPAImpl implements StudentDAO<Student> {
     }
 
     @Override
-    public void update(Student newStudent) {
-        Student student = entityManager.find(Student.class, newStudent.getId());
-        student.setAddress(newStudent.getAddress());
-        student.setName(newStudent.getName());
-        student.setBirthDate(newStudent.getBirthDate());
-        student.setGender(newStudent.getGender());
+    public void update(Student student) {
         entityManager.merge(student);
     }
 
