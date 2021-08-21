@@ -37,13 +37,7 @@ public class StudentDAOHibernateImpl implements StudentDAO<Student> {
     }
 
     @Override
-    public void update(Student newStudent) {
-        Session session = entityManager.unwrap(Session.class);
-        Student student = session.get(Student.class, newStudent.getId());
-        student.setAddress(newStudent.getAddress());
-        student.setName(newStudent.getName());
-        student.setBirthDate(newStudent.getBirthDate());
-        student.setGender(newStudent.getGender());
+    public void update(Student student) {
         session.merge(student);
     }
 
