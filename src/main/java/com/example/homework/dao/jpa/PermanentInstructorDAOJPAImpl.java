@@ -34,12 +34,7 @@ public class PermanentInstructorDAOJPAImpl implements PermanentInstructorDAO<Per
     }
 
     @Override
-    public void update(PermanentInstructor newPermanentInstructor) {
-        PermanentInstructor permanentInstructor = entityManager.find(PermanentInstructor.class, newPermanentInstructor.getId());
-        permanentInstructor.setName(newPermanentInstructor.getName());
-        permanentInstructor.setAddress(newPermanentInstructor.getAddress());
-        permanentInstructor.setPhoneNumber(newPermanentInstructor.getPhoneNumber());
-        permanentInstructor.setFixedSalary(newPermanentInstructor.getFixedSalary());
+    public void update(PermanentInstructor permanentInstructor) {
         entityManager.merge(permanentInstructor);
     }
 
