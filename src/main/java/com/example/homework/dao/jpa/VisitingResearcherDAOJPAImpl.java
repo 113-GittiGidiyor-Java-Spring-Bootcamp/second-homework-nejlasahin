@@ -34,12 +34,7 @@ public class VisitingResearcherDAOJPAImpl implements VisitingResearcherDAO<Visit
     }
 
     @Override
-    public void update(VisitingResearcher newVisitingResearcher) {
-        VisitingResearcher visitingResearcher = entityManager.find(VisitingResearcher.class, newVisitingResearcher.getId());
-        visitingResearcher.setName(newVisitingResearcher.getName());
-        visitingResearcher.setAddress(newVisitingResearcher.getAddress());
-        visitingResearcher.setPhoneNumber(newVisitingResearcher.getPhoneNumber());
-        visitingResearcher.setHourlySalary(newVisitingResearcher.getHourlySalary());
+    public void update(VisitingResearcher visitingResearcher) {
         entityManager.merge(visitingResearcher);
     }
 
