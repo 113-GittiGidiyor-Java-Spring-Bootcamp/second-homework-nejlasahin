@@ -38,13 +38,7 @@ public class PermanentInstructorDAOHibernateImpl implements PermanentInstructorD
     }
 
     @Override
-    public void update(PermanentInstructor newPermanentInstructor) {
-        Session session = entityManager.unwrap(Session.class);
-        PermanentInstructor permanentInstructor = session.get(PermanentInstructor.class, newPermanentInstructor.getId());
-        permanentInstructor.setName(newPermanentInstructor.getName());
-        permanentInstructor.setAddress(newPermanentInstructor.getAddress());
-        permanentInstructor.setPhoneNumber(newPermanentInstructor.getPhoneNumber());
-        permanentInstructor.setFixedSalary(newPermanentInstructor.getFixedSalary());
+    public void update(PermanentInstructor permanentInstructor) {
         session.merge(permanentInstructor);
 
     }
