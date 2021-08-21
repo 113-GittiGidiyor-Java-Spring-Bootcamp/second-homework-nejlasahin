@@ -37,12 +37,7 @@ public class CourseDAOHibernateImpl implements CourseDAO<Course> {
     }
 
     @Override
-    public void update(Course newCourse) {
-        Session session = entityManager.unwrap(Session.class);
-        Course course = session.get(Course.class, newCourse.getId());
-        course.setCourseName(newCourse.getCourseName());
-        course.setCourseCode(newCourse.getCourseCode());
-        course.setCreditScore(newCourse.getCreditScore());
+    public void update(Course course) {
         session.merge(course);
 
     }
