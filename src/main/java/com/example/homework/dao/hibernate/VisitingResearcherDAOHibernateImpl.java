@@ -37,13 +37,7 @@ public class VisitingResearcherDAOHibernateImpl implements VisitingResearcherDAO
     }
 
     @Override
-    public void update(VisitingResearcher newVisitingResearcher) {
-        Session session = entityManager.unwrap(Session.class);
-        VisitingResearcher visitingResearcher = session.get(VisitingResearcher.class, newVisitingResearcher.getId());
-        visitingResearcher.setName(newVisitingResearcher.getName());
-        visitingResearcher.setAddress(newVisitingResearcher.getAddress());
-        visitingResearcher.setPhoneNumber(newVisitingResearcher.getPhoneNumber());
-        visitingResearcher.setHourlySalary(newVisitingResearcher.getHourlySalary());
+    public void update(VisitingResearcher visitingResearcher) {
         session.merge(visitingResearcher);
     }
 
